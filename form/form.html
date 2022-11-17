@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form method="GET" class="form" action="/apply/">
+        <div>
+            <label for="input1">input1</label>
+            <input class="input" id="input1" type="text">
+        </div>
+        <div>
+            <label for="input2">input2</label>
+            <input class="input" id="input2" type="text">
+        </div>
+        
+        <div>
+            <label for="select1">select1</label>
+            <select class="input" name="" id="select1"></select>
+        </div>
+        <div>
+            <label for="select2">select2</label>
+            <select class="input" name="" id="select2"></select>
+        </div>
+        <div>
+            <label for="select3">select3</label>
+            <select class="input" name="" id="select3"></select>
+        </div>
+        <div>
+            <label for="select4">select4</label>
+             <select class="input" name="" id="select4"></select>
+        </div>
+        <div>
+            <label for="select5">select5</label>
+            <select class="input" name="" id="select5"></select>
+        </div>
+        <button type="submit">submit</button>
+    </form>
+    <p class="result"></p>
+    <script>
+        let node = `<option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>`;
+        let selects = document.querySelectorAll('select');
+        for(let s of selects) {
+            s.innerHTML = node;
+        }
+    </script>
+    <script src="formhandler.js"></script>
+</body>
+</html>
