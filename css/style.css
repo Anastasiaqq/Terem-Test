@@ -20,6 +20,9 @@
     align-self: center;
     width: fit-content;
 }
+.heading-hidden {
+    display:none
+}
 .child {
     border: 1px solid black;
     order: 0
@@ -44,6 +47,9 @@
 .card:nth-child(4) {
     background: #fbeace;
 }
+.order-changed {
+    order:1
+}
 .footer{
     order: 3
 }
@@ -52,4 +58,28 @@
 }
 .footer2 {
     grid-column: span 8
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    display: none;
+    background: #ffffffb3;
+    z-index: 1
+}
+.modal-show {
+    display:flex;
+}
+.modalBody {
+    display: flex;
+    justify-content: space-between;
+    place-self: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px gray, -5px 5px 5px gray;
 }
